@@ -3,7 +3,7 @@ let quote = document.getElementById('quote');
 let author = document.getElementById('author');
 
 function generator() {
-    fetch("https://breaking-bad-quotes.herokuapp.com/v1/quotes")
+    fetch("https://api.breakingbadquotes.xyz/v1/quotes")
         .then(res => {
             if (res.ok) {
                 res.json().then(data => {
